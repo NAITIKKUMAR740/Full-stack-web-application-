@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h1>forms</h1>
+    <form action="/process.php">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" placeholder="name">
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="Phone">
+        <div>
+            <P>CHOOSE YOUR GENDER</P>
+            <input type="radio" name="gender" id="gender" value="MALE">
+            <label for="MALE">MALE</label>
+
+            <input type="radio" name="gender" id="gender" value="MALE">
+            <label for="FEMALE">FEMALE</label>
+
+        </div>
+
+        <P>CHOSSE YOUR INTREST</P>
+
+        <input type="checkbox" name="intrest" value="playing">
+        <label for="playing">Playing</label>
+        <label>Choose a city:</label>
+
+        <select id="city" name="city">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="bangalore">Bangalore</option>
+        </select>
+        <br><br>
+        <textarea name="msg" id="msg"></textarea>
+
+
+        <BR><BR>
+        <label for="pass">PASSWORD</label>
+        <input type="password" id="pass" name="PASSWORD">
+        <br> <br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
