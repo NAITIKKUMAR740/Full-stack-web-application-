@@ -1,0 +1,38 @@
+* {
+    margin: 10;
+    padding: 20;
+    background-color: rgb(253, 255, 255);
+}
+
+
+
+h1 {
+    color: rgb(193, 94, 140);
+}
+
+.hero {
+
+    color: rgb(33, 187, 82);
+    font-style: oblique;
+}
+
+#bad {
+    background-color: black;
+    color: brown;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.box {
+
+    width: 50px;
+
+    padding: 22px;
+    margin: 20px;
+
+    border: 9px solid rgb(110, 70, 173);
+    background-color: rgb(212, 19, 19);
+
+
+}
