@@ -8,11 +8,13 @@
         .container{
             border: 4px solid black;
             width: 80vw;
+            height: 70vh;
            
             /* height: 70vh; */
             padding: 6px;
             display: flex;
-            justify-content: space-around
+            justify-content: space-evenly ;
+            align-items: center;
 
 
         }
@@ -21,9 +23,13 @@
             height: 25px;
             border: 2px solid green;
             padding: 6px;
-            
+            flex-wrap: wrap;
             margin: 14px;
+            flex-grow: 1;
         }
+        /* #box1{
+            align-self: flex-end;
+        } */
     </style>
 </head>
 <body>
@@ -33,7 +39,7 @@
             box 1
 
         </div>
-        <div class="box">
+        <div class="box" id="box1">
             box 2
 
         </div>
