@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitio</title>
+
+    <style>
+        .container {
+            border: 2px slid black;
+            background-color: chartreuse;
+
+        }
+
+        .box {
+            background-color: aqua;
+            width: 40px;
+            height: 40px;
+            margin: 3px;
+            /* transition: background-color .03s ease 3s; */
+            animation: nk 2.5s ease 0.9s 3 normal;
+        }
+
+        #box1 {
+            background-color: aqua;
+            width: 40px;
+            height: 40px;
+            margin: 3px;
+            /* transition: background-color .03s ease 3s; */
+            animation: nl 2s ease 7s normal;
+        }
+
+        @keyframes nk {
+            from {
+                width: 45px;
+            }
+
+            to {
+                width: 45vw;
+            }
+        }
+
+        @keyframes nl {
+            from {
+                background-color: aquamarine;
+            }
+
+            to {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">box1</div>
+        <div id="box1">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+</body>
+
+</html>

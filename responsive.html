@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media queries</title>
     <style>
-        .container{
+        .container {
             border: 4px solid black;
             width: 80vw;
             height: 70vh;
-           
+
             /* height: 70vh; */
             padding: 6px;
-           
-         
+
+
         }
 
         @media (max-width : 786px) {
 
-            body{
+            body {
                 background-color: brown;
             }
-            
+
         }
 
-        @media print{
-            body{
+        @media print {
+            body {
 
                 background-color: aliceblue;
                 color: black;
             }
         }
 
-        .box{
-            width:74px;
+        .box {
+            width: 74px;
             height: 25px;
             border: 2px solid green;
             padding: 6px;
         }
+
         /* #box1{
             align-self: flex-end;
         } */
     </style>
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="box">
             box 1
@@ -68,4 +71,5 @@
         </div>
     </div>
 </body>
+
 </html>
