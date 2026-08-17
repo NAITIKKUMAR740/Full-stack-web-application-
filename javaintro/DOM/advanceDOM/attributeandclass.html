@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributeandclass</title>
+    <style>
+        .fimg{
+            background-color: black;
+            border: 2px solid brown;
+            padding: 12px;
+        }
+        .blue{
+            background-color:white;
+            border: 2px solid brown;
+            padding: 12px;
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div id="welcome"> welcome to my form</div>
+        <form action="">
+            <input type="text" id="name" value="naitik">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <div class="comtainer">
+        <img id="image"  src="https://imgs.search.brave.com/RBxOMXYURZEyhMp8ttZuSv9UMb4kQBgZ1YMNia2PvRY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4Lzc4LzA5LzUx/LzM2MF9GXzg3ODA5/NTEzOF8xZnFENWR4/UjZXbU1OZ0JadDV2/ZFJFRHc4RzNHVE9m/MS5qcGc" alt="">
+    </div>
+    <button onclick="funk()" id="btn">change color</button>
+    <script>
+        const img=document.getElementById("image")
+        img.setAttribute("alt","image")
+        img.removeAttribute("alt")
+        img.classList.add("fimg")
+
+        function funk(){
+            
+            img.classList.toggle("blue")
+
+        
+
+        if(img.classList.contains("blue")){
+            document.getElementById("btn").innerText="remove to blue ";
+        }
+        else{
+            document.getElementById("btn").innerText="change to blue ";
+
+        }}
+
+    </script>
+    
+</body>
+</html> 
