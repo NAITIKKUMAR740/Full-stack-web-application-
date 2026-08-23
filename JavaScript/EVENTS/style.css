@@ -1,0 +1,10 @@
+.box {
+    height: 55px;
+    width: 344px;
+    background-color: brown;
+    padding: 34px;
+    margin: 34px;
+}
+#box2{
+    cursor: pointer;
+}
