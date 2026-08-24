@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage</title>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <input id="name" type="text" value="">
+            <input type="submit" onclick="get()" value="submit">
+            <!-- <button type="submit" onclick="get()">mm</button> -->
+        </form>
+    </div>
+
+    <script>
+        const v = localStorage.getItem("name")
+        if (v) {
+            document.getElementById("name").value = v
+
+        }
+        document.getElementsByTagName("form")[0].addEventListener("submit", (e) => {
+
+            e.preventDefault()
+            const value = document.getElementById("name").value;
+            localStorage.setItem("name", value)
+
+        })
+        // console.log(v)
+
+        const user = {
+
+            name: 'Naitik',
+            age: 20
+        };
+
+// Store the object
+
+            localStorage.setItem('user', JSON.stringify(user));
+
+            // Retrieve the object
+
+            const storedUser = JSON.parse(localStorage.getItem('user'));
+
+            console.log(storedUser.name); // Output: Harry
+    </script>
+</body>
+
+</html>
